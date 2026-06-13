@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+     }
+
+    //  setTimeout()
+    //        Executes a function once after a specified delay (in milliseconds).
+    //  Syntax:
+    //          setTimeout(function () {
+    //              // code
+    //         }, delay);
+
+    //  clearTimeout()
+    //           Cancels a timeout before it executes.
+    //           Requires the ID returned by setTimeout()
+    //     Syntax:
+    //           const id = setTimeout(function () {
+    //             // code
+    //           }, delay);
+
+    //          clearTimeout(id);
+    
+    // delay is always in milliseconds, ex) 1000ms = 1s
+    
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html>

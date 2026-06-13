@@ -180,7 +180,7 @@ function newGame() {
 ```
 
 
-# Project 5 solution
+# Project 5 (Keyboard Check) solution
 
 ```javascript
 const insert = document.getElementById('insert');
@@ -208,7 +208,7 @@ window.addEventListener('keydown', (e) => {
 
 ```
 
-# Project 6 Solution
+# Project 6 (unlimited randomColor generator) Solution
 
 ```javascript
 //generate a random color
