@@ -29,8 +29,10 @@ function User(username, loginCount, isLoggedIn){
 
     return this
 }
-
+// new keyword is used to create a new instance of an object and it also creates a new context for the function.
 const userOne = new User("hitesh", 12, true)
 const userTwo = new User("ChaiAurCode", 11, false)
 console.log(userOne.constructor);
 //console.log(userTwo);
+
+// read instanceof on mdn docs
