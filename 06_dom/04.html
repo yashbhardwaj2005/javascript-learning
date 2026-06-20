@@ -11,7 +11,7 @@
         <li>Javascript</li>
     </ul>
 </body>
-<script> // ADD
+<script> // add elememts
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
@@ -20,9 +20,9 @@
     addLanguage("python")
     addLanguage("typescript")
 
-    function addOptiLanguage(langName){
+    function addOptiLanguage(langName){     //opti means  optimised 
         const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName))
+        li.appendChild(document.createTextNode(langName)) // append child way is more optimised than inner HTML
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
